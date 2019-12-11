@@ -22,9 +22,11 @@ function changeColor() {
 function copyText() {
   colorText.select();
   document.execCommand("copy");
-  tooltip.innerHTML = "Copied: " + colorText.value;
+  tooltip.innerHTML = "Copied: " + colorText.value.toUpperCase();
+  tooltip.style.background = "#008697";
 }
 
 function copyTooltip() {
   tooltip.innerHTML = "Click to copy";
+  tooltip.style.background = "#616161";
 }
